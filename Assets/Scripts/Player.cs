@@ -7,19 +7,27 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] GameObject LaserPrefab;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] AudioClip deathSFX;
+    float sfxVolume = 0.7f;
     float laserFiringPeriod = 0.1f;
+    float laserSpeed = 10f;
 
     float moveSpeed = 7f;
-    float laserSpeed = 10f;
     float padding = 0.2f;
+    int health = 100;
+
+
     float xMin;
     float xMax;
-
     float yMin;
     float yMax;
 
+
     Coroutine firingCoroutine;
-    // Start is called before the first frame update
+
+
+
     void Start()
     {
         SetMoveBoundaries();
@@ -31,6 +39,34 @@ public class Player : MonoBehaviour
     {
         Move();
         Fire();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collisionObject)
+    {
+        DamageDealer damageDealer = collisionObject.gameObject.GetComponent<DamageDealer>();
+
+        if (!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+
+        damageDealer.Hit();
+        if (health <= 0)
+        {
+            Die();
+
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject, 1f);
+        GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, 1f);
+        AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, sfxVolume);
     }
 
     private void Fire()
@@ -78,4 +114,6 @@ public class Player : MonoBehaviour
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
     }
+
+   
 }

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2265306475491953171}
   - component: {fileID: 2265306475491953172}
   - component: {fileID: 2265306475491953170}
-  m_Layer: 0
+  - component: {fileID: 1585605672225892358}
+  - component: {fileID: 8325756442826836172}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,6 +96,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a42440a354e9443a873ce55be8f72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
   LaserPrefab: {fileID: 4386714741969293206, guid: 881a8fd1e59756947983d5cc13cd4b26,
     type: 3}
+  deathVFX: {fileID: 7833467099048739341, guid: 6d38649808f38574e836a7286bb91558,
+    type: 3}
+  deathSFX: {fileID: 8300000, guid: feaa6d3188de5ed418f25bfb6d30b569, type: 3}
+--- !u!50 &1585605672225892358
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2265306475491953173}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &8325756442826836172
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2265306475491953173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.040876042, y: 0.19210625}
+      - {x: -0.08807084, y: 0.19210625}
+      - {x: -0.11701771, y: 0.040447474}
+      - {x: -0.17123021, y: 0.01061511}
+      - {x: -0.19465052, y: -0.00087594986}
+      - {x: -0.19465052, y: -0.053159237}
+      - {x: -0.099384874, y: -0.1446507}
+      - {x: -0.040698934, y: -0.15061522}
+      - {x: -0.027785927, y: -0.14777088}
+      - {x: 0.095088586, y: -0.053336382}
+      - {x: 0.09359741, y: -0.010876417}
+      - {x: 0.0022833347, y: 0.05719471}

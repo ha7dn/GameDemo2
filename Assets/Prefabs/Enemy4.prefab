@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3682042032778461279}
   - component: {fileID: 1436898628768458498}
   - component: {fileID: -7428714179042756591}
-  - component: {fileID: 4178498453762370685}
-  m_Layer: 0
+  - component: {fileID: 2609752049511728348}
+  m_Layer: 9
   m_Name: Enemy4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,9 +110,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fdb300b21fb074daef11c5cad0c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
---- !u!58 &4178498453762370685
-CircleCollider2D:
+  projectile: {fileID: 5526814631830796504, guid: aa8c6aa3ae197744cb9b123f54c6f02c,
+    type: 3}
+  deathVFX: {fileID: 7833467099048739341, guid: 6d38649808f38574e836a7286bb91558,
+    type: 3}
+  deathSFX: {fileID: 8300000, guid: dccdca86ddd1e4d419181ddf6f47fe42, type: 3}
+  ShootingSFX: {fileID: 8300000, guid: 11fb4b5fc90cc324793ba6464517a89e, type: 3}
+--- !u!70 &2609752049511728348
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -124,6 +129,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017551064, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.34734684
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.94, y: 0.35}
+  m_Direction: 1

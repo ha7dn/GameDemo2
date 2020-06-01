@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7546581939131954168}
   m_Layer: 0
-  m_Name: Path(0) 1
+  m_Name: Path(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,6 +47,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2052549267033593134, guid: d2099c11157091c4bad46102466d1ab0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4074850778787917241, guid: d2099c11157091c4bad46102466d1ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,6 +128,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 2052549267033593134, guid: d2099c11157091c4bad46102466d1ab0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4074850778787917241, guid: d2099c11157091c4bad46102466d1ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -197,6 +209,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2052549267033593134, guid: d2099c11157091c4bad46102466d1ab0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4074850778787917241, guid: d2099c11157091c4bad46102466d1ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -272,6 +290,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2052549267033593134, guid: d2099c11157091c4bad46102466d1ab0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4074850778787917241, guid: d2099c11157091c4bad46102466d1ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,6 +371,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2052549267033593134, guid: d2099c11157091c4bad46102466d1ab0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4074850778787917241, guid: d2099c11157091c4bad46102466d1ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
