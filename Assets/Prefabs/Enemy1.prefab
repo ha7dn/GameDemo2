@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3005774371218210375}
   - component: {fileID: 8472494440703715005}
   - component: {fileID: -2081389766405241163}
+  - component: {fileID: 6626597556478888527}
+  - component: {fileID: -1940534751297475142}
   m_Layer: 9
   m_Name: Enemy1
   m_TagString: Untagged
@@ -132,3 +134,37 @@ CircleCollider2D:
   m_Offset: {x: -0.0075218678, y: 0}
   serializedVersion: 2
   m_Radius: 0.2021572
+--- !u!50 &6626597556478888527
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113986723698775858}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-1940534751297475142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113986723698775858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45dcd8477061b4c43bf1be652bdadc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 200
