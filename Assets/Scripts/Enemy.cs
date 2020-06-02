@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] AudioClip deathSFX;
     [SerializeField] AudioClip ShootingSFX;
+    int scoreValue = 100;
     float sfxVolume = 0.7f;
     float health = 20f;
     float shotCounter;
@@ -59,12 +60,12 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
-
         }
     }
 
     private void Die()
     {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject, 0.1f);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, 0.5f);

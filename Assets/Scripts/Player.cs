@@ -71,6 +71,11 @@ public class Player : MonoBehaviour
         FindObjectOfType<SceneLoader>().LoadGameOver();
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
     private void Fire()
     {
         if (Input.GetButtonDown("Fire1"))
